@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hassam_ui/HomeScreen.dart';
 import 'package:flutter_hassam_ui/cart.dart';
+import 'package:flutter_hassam_ui/wMPatientList.dart';
 import 'package:flutter_hassam_ui/wortyMileMain.dart';
 
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: WorthyMilesDashboard(),
     );
   }
 }

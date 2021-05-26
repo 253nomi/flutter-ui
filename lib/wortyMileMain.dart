@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
-class WorthyMilesDashboard extends StatefulWidget {
-  @override
-  _WorthyMilesDashboardState createState() => _WorthyMilesDashboardState();
-}
+class WorthyMilesDashboard extends StatelessWidget {
 
-class _WorthyMilesDashboardState extends State<WorthyMilesDashboard> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -214,29 +210,17 @@ class _WorthyMilesDashboardState extends State<WorthyMilesDashboard> {
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  FittedBox(
-                    fit: BoxFit.contain,
-                    child: SvgPicture.asset("assets/images/cube.svg",
+                  SvgPicture.asset("assets/images/cube.svg",
+                     height: 30),
+                  SvgPicture.asset("assets/images/network.svg",
+                      color: Colors.blue,
                        height: 30,),
+                  SvgPicture.asset("assets/images/arm.svg",
+                  height: 30,
                   ),
-                  FittedBox(
-                    fit: BoxFit.contain,
-                    child: SvgPicture.asset("assets/images/network.svg",
-                        color: Colors.blue,
-                         height: 30,),
-                  ),
-                  FittedBox(
-                    fit: BoxFit.contain,
-                    child: SvgPicture.asset("assets/images/arm.svg",
-                    height: 30,
-                    ),
-                  ),
-                  FittedBox(
-                    fit: BoxFit.contain,
-                    child: SvgPicture.asset("assets/images/user.svg",
-                        color: Colors.blueGrey,
-                        height: 35,),
-                  ),
+                  SvgPicture.asset("assets/images/user.svg",
+                      color: Colors.blueGrey,
+                      height: 35,),
                 ]),
           ),
         ]),
