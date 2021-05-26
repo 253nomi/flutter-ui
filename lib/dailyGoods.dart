@@ -43,7 +43,7 @@ class DailyFood extends StatelessWidget {
                                 child: Row(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Image.asset("assets/coin.png", height: 20)
+                                Image.asset("assets/images/coin.png", height: 20)
                                 ,SizedBox(width: 5),
                                 Text("11",  style: TextStyle(
                                     fontWeight: FontWeight.w900,

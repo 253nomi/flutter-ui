@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hassam_ui/HomeScreen.dart';
-import 'package:flutter_hassam_ui/dailyGoods.dart';
+import 'package:flutter_hassam_ui/cart.dart';
+import 'package:flutter_hassam_ui/wortyMileMain.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DailyFood(),
+      home: HomeScreen(),
     );
   }
 }
